@@ -168,11 +168,10 @@ Same as the `verify` API:
 
 
 #### 4.2.4 Request Body
-The request body is in JSON format, containing the `verifyId` returned by the `verify` API and payment transaction information:
+The request body is in JSON format, returned by the `verify` API and payment transaction information:
 
 | Field Name         | Type   | Required | Description                                                                 | Example Value                                      |  
 |--------------------|--------|----------|-----------------------------------------------------------------------------|-----------------------------------------------------|  
-| verifyId           | string | Yes      | Unique verification ID returned by the `verify` API (used to associate verification records) | `verify_123456`                                     |  
 | transactionHash    | string | Yes      | Blockchain payment transaction hash (must match the payment parameters in `verify`) | `0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef` |  
 | timestamp          | number | Yes      | Timestamp of transaction completion (in milliseconds)                        | `1718236800000`                                     |  
 
